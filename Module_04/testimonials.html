@@ -1,0 +1,137 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta charset="UTF-8">
+   <title>HTML5 / CSS3 Drop-Down Navigation Menu</title>
+   <meta name="description" content="">
+
+   <link rel="stylesheet" href="style.css">
+
+   <!-- IE6-8 support of HTML5 elements --> <!--[if lt IE 9]>
+   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+   <![endif]-->
+
+   <div class="container">
+     <img src="arrow1.jpg" alt="Cupid Body Supplements" width="200" height="150">
+     <div class="img1">Cupid Body Supplements</div>
+   </div>
+<style>
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+
+/* Main Navigation */
+#nav {
+    position:relative;
+    width:500px;
+    margin:0 auto;
+    margin-top:-100px;
+    padding:10px;
+}
+
+ul#navigation {
+    margin:0px auto;
+    position:relative;
+    float:left;
+    border-left:1px solid #c4dbe7;
+    border-right:1px solid #c4dbe7;
+}
+
+ul#navigation li {
+    display:inline;
+    font-size:12px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    float:left;
+    position:relative;
+    border-top:1px solid #c4dbe7;
+    border-bottom:2px solid #c4dbe7;
+}
+
+ul#navigation li a {
+    padding:10px 25px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border-right:1px solid #fff;
+    border-left:1px solid #C2C2C2;
+    border-top:1px solid #fff;
+    background: #f5f5f5;
+
+    -webkit-transition:color 0.2s linear, background 0.2s linear;
+    -moz-transition:color 0.2s linear, background 0.2s linear;
+    -o-transition:color 0.2s linear, background 0.2s linear;
+    transition:color 0.2s linear, background 0.2s linear;
+}
+</style>
+</head>
+<body>
+
+  <nav id="nav">
+      <ul id="navigation">
+          <li><a href="http://bryanlopez.centralus.cloudapp.azure.com/Index.html" class="first">Home</a></li>
+          <li><a href="http://bryanlopez.centralus.cloudapp.azure.com/shopnow.html">Shop Now </a></li>
+          <li><a href="http://bryanlopez.centralus.cloudapp.azure.com/contactus.html">Contact </a></li>
+          <li><a href="http://bryanlopez.centralus.cloudapp.azure.com/testimonials.html">Testimonials</a></li>
+      </ul>
+  </nav>
+
+  <br>
+  </br>
+  <br>
+  </br>
+  <br>
+  </br>
+  <br>
+  </br>
+
+<h2>Check out what our clients have to say about our business!</h2>
+<p>Testimonials</p>
+
+<div class="container">
+  <p><span>Chris Fox</span> Creator of happiness</p>
+  <p>What an amazing change I have seen in my body! Our trainer is the best. My situation is complex and Noelle has taken the time to understand and customize my workout. She is very talented and has a wide range of options to help with general cardio and strength conditioning. I see improvements already!!</p>
+</div>
+
+<div class="container">
+  <p><span>Rebecca Flex</span> CEO of her own life.</p>
+  <p>I have never been more confident in my life! Our trainer was everything I expected and more. She did an excellent job of assessing my needs and explaining the exercises that I need to improve my weaknesses.</p>
+</div>
+
+</body>
+</html>
